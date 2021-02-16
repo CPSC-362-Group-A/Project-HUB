@@ -7,14 +7,23 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #3399ff;
 }
 li{
   float: left;
 }
 li a {
   display: block;
-  padding: 10px;
-  background-color: #dddddd;
+  color: White;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #111;
+}
+.active{
+  background-color: #4CAF50;
 }
 </style>
 </head>
@@ -26,19 +35,23 @@ li a {
         <ul class="navbar-nav">
 
         <li class="nav-item">
-          <a class="nav-link" href="about/">About</a>
+          <a class="nav-link" href= "http://127.0.0.1:8000/">Home</a>
           </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="admin/">Login</a>
+          <a class="nav-link" href="http://127.0.0.1:8000/about/">About</a>
           </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="contact/">Contact</a>
+          <a class="nav-link" href="http://127.0.0.1:8000/admin/">Login</a>
           </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="product/">Products</a>
+          <a class="nav-link" href="http://127.0.0.1:8000/contact/">Contact</a>
+          </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/product/">Products</a>
           </li>
 
         </ul>
