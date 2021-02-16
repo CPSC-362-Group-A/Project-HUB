@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # Project-HUB
-This semester-long project will result in the greatest software created by students!
+This repository contains the necessary files used in building our website. To access the HTML files, navigate
+to env/src/trydjango/templates. Once we this repository is cloned on everyone's machines, we will be able
+to share our work more efficiently.
 
 
 For Linux users you will need to change the activate file as follows to get into the virtual environmen:
@@ -9,3 +12,7 @@ Go into the directory /Django/env/Scripts and type the following command
 dos2unix activate
 After file activate has been changed to Unix format run
 source activate
+=======
+# Project-HUB/Virtual Env
+
+>>>>>>> VirtualEnv
