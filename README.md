@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Project-HUB
 This repository contains the necessary files used in building our website. To access the HTML files, navigate
 to env/src/trydjango/templates. Once we this repository is cloned on everyone's machines, we will be able
@@ -11,8 +11,4 @@ sudo apt install dos2unix
 Go into the directory /Django/env/Scripts and type the following command
 dos2unix activate
 After file activate has been changed to Unix format run
-source activate
-=======
-# Project-HUB/Virtual Env
 
->>>>>>> VirtualEnv
