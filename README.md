@@ -1,2 +1,1 @@
-# Project-HUB
-This semester-long project will result in the greatest software created by students!
+This branch will contain the changes made by group member Robert Kenny 
