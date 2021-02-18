@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <link rel="stylesheet" type="text/css" href="{% static '/cal_home/main.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static '/cal_home/style.css' %}">
+     <title>My Calendar</title>
+
+</head>
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="topnav">
+    <a class="active" href={% url 'cal_home' %}>My Calendar</a>
+    <a href={% url 'cal_about' %}>About</a>
+    <a href="#Login">Login</a>
+    <a href="#SignUp">Signup</a>
+  </div> 
+   
+      
+    <div class ="container">
+        {% block content %} {% endblock %}
+    </div>
+    
+
+    
+</body>
+
+</html>
