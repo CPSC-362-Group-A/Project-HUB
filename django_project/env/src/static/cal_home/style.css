@@ -9,37 +9,71 @@
     height: 100%;
     width: 100%;
    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg");
-    background-position: center;
+ 
+   background-position: center;
     background-size: cover;
     position: absolute;
 }
 
 .form-box{
     width: 380px;
-    height: 480px;
+    height: 600px;
     position: relative;
+    justify-content: center;
     margin: 6% auto;
     background:white;
+    border: 3px solid rgb(44, 128, 206);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.home_title{
+  color:rgb(118, 164, 248);
+  text-shadow: 1px 1px rgb(107, 51, 170);
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .button-box{
     width: 190px;
     margin: auto;
     position: relative;
+    
     /*box-shadow: 0 0 20px 9px #ff61241f;*/
     border-radius: 30px; 
+    border-style:solid;
+    border-color: black;
     background-color: rgb(42, 206, 218);
     overflow: hidden;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.toggle-btn{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
+.toggle-btn1{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid black;
+    
+  border-left:black;
+  border-top: rgb(42, 206, 218);
+  border-bottom: rgb(42, 206, 218);
     outline: none;
-    position: relative;
+    position:relative;
+}
+
+.toggle-btn2{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid black;
+  
+  border-right:black;
+  border-top: rgb(42, 206, 218);
+  border-bottom: rgb(42, 206, 218);
+  outline: none;
+  position: relative;
 }
 
 
@@ -50,7 +84,7 @@
 .image-icons img{
     width: 250px;
     margin: 0 12px;
-    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    box-shadow: 0 0 15px 0 #6867673d;
     border-radius: 50;
 }
 
@@ -70,9 +104,11 @@
     color: black;
   }
   
+/* Might need to double check the active/current link. */
+
   /* Add a color to the active/current link */
   .button-box a.active {
-    background-color: lightblue;
+    background-color: rgb(173, 188, 230);
     color: black;
   }
 
