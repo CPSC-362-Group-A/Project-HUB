@@ -47,13 +47,25 @@ li a.active{
           <a class="nav-link" href="http://127.0.0.1:8000/about/">About</a>
           </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href= "http://127.0.0.1:8000/register/">Sign Up</a>
-          </li>
 
         <li class="nav-item">
           <a class="nav-link" href="http://127.0.0.1:8000/contact/">Contact</a>
           </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item" style="float:right">
+          <a class="nav-link" href= "{% url 'profile' %}">Profile</a>
+          </li>
+        <li class="nav-item" style="float:right">
+          <a class="nav-link" href= "{% url 'logout' %}">Logout</a>
+          </li>
+        {% else %}
+        <li class="nav-item" style="float:right">
+          <a class="nav-link" href= "{% url 'login' %}">Login</a>
+          </li>
+        <li class="nav-item" style="float:right">
+          <a class="nav-link" href= "{% url 'register'%}">Register</a>
+          </li>
+        {% endif %}
 
         <li class="nav-item" style="float:right">
           <a class="nav-link" href="http://127.0.0.1:8000/admin/">Admin</a>
