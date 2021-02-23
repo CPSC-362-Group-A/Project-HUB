@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #my apps
+    'users',
+    #Third Party
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +126,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/cal_home/'
+
+LOGIN_REDIRECT_URL = 'cal_calendar' 
+LOGIN_URL = 'login'
 
 STATIC_ROOT = '/env/src/static'
 
