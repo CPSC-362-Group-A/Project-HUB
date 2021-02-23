@@ -7,9 +7,9 @@
 
     {% extends 'cal_home/base.html' %}
     {% load static %}
-    
+
      {% block content %}
-            
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,8 +19,8 @@
 </head>
 
 
-<body>
-    <h1>Calendar.</h1>
+<body class = "hero_cal">
+    <h1>Calendar</h1>
 
 
 <div class="month">
@@ -31,7 +31,7 @@
       <li>February<br><span style="font-size:18px">2021</span></li>
     </ul>
   </div>
-  
+
   <ul class="weekdays">
     <li>Mo</li>
     <li>Tu</li>
@@ -41,7 +41,7 @@
     <li>Sa</li>
     <li>Su</li>
   </ul>
-  
+
   <ul class="days">
     <!-- Number of days need to not be hardcoded in-->
     <li>1</li>
@@ -73,6 +73,7 @@
     <li>27</li>
     <li>28</li>
   </ul>
+
 </body>
   {% endblock %}
 </html>
