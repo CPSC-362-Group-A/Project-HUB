@@ -6,4 +6,5 @@ urlpatterns = [
     
     path('main/', views.main, name ='cal_main'),
     path('about/', views.about, name ='cal_about'),
+
 ]
