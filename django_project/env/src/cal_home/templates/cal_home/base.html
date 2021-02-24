@@ -9,7 +9,10 @@
  
      <link rel="stylesheet" type="text/css" href="{% static '/cal_home/main.css' %}">
      <link rel="stylesheet" type="text/css" href="{% static '/cal_home/style.css' %}">
-     <title>Task Scheduler</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+      <link rel="stylesheet" type="text/css" href="{% static 'cal_home/calen-style.css' %}">
+      <title>Task Scheduler</title>
 
 </head>
 <body>
@@ -18,7 +21,7 @@
     <!---->
     <a class="active" href="#Home">Home</a>
     <a href={% url 'cal_about' %}>About</a>
-    <a href={% url 'cal_calendar' %}>Calendar</a>
+    <a href={% url 'calen:calendarhome' %}>Calendar</a>
     <a href="#Tasks">Tasks</a>
     <a href="#Music">Music</a>
     <a href="#Settings">Settings</a>

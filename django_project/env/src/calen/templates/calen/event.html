@@ -1,4 +1,4 @@
-{% extends 'calen/base.html' %}
+{% extends 'cal_home/base.html' %}
 
 {% block title %}
 Event
@@ -6,7 +6,7 @@ Event
 
 {% block content %}
 <div class="clearfix">
-    <a class="btn btn-info left" href="{% url 'calen:calendar' %}">Calendar</a>
+    <a class="btn btn-info left" href="{% url 'calen:calendarhome' %}">Calendar</a>
 </div>
 
 {% if form.errors %}
