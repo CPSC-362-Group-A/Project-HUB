@@ -9,7 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #empty path maches with the empty url in the cal_home to make the homepage
     path('', include('cal_home.urls')),
-
+    path('', include('calen.urls')),
     #user app urls
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),

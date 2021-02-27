@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #my apps
     'users',
+    'calen',
     #Third Party
     'crispy_forms',
 ]
@@ -127,7 +128,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/cal_home/'
 
-LOGIN_REDIRECT_URL = 'cal_calendar' 
+LOGIN_REDIRECT_URL = 'calen:calendarhome' 
 LOGIN_URL = 'login'
 
 STATIC_ROOT = '/env/src/static'
