@@ -7,19 +7,21 @@
 }
 
 .calendar tr, .calendar td{
-    border: 1px solid black;
+    border: 5px solid #ffbe78;
 }
 
 .calendar th{
     padding: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size:18px;
+    border: 5px solid #ffbe78;
 }
 
 .calendar td{
     width: 200px;
     height: 150px;
     padding: 20px 0px 0px 5px;
+    border: 5px solid #ffbe78;
 }
 
 .month{
@@ -29,6 +31,7 @@
 .date{
     font-size: 16px;
 }
+
 
 ul{
     height: 100%;
@@ -69,4 +72,9 @@ a{
     background: none;
     padding: 5px;
     width: 100%;
+}
+
+mark{
+    background-color: cadetblue;
+    color: black;
 }

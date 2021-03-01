@@ -17,10 +17,12 @@ class CalendarView(generic.ListView):
     template_name = 'calen/calendar.html'
 
     def get_context_data(self, **kwargs):
+        t = datetime.today()
         context = super().get_context_data(**kwargs)
         d = get_date(self.request.GET.get('month', None))
         calen = Calendar(d.year, d.month)
         html_calen = calen.formatmonth(withyear=True)
+        html_calen = html_calen.replace('>%i<'%t.day, '<b><u><mark style="background-color:#ff85b4">%i</mark></u></b><'%t.day)
         context['calendar'] = mark_safe(html_calen)
         context['prev_month'] = prev_month(d)
         context['next_month'] = next_month(d)
