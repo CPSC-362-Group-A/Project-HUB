@@ -1,4 +1,5 @@
 # Branch: Robert_new 
+This new branch is updated with the most recent version of main. 
 # Project-HUB
 This repository contains the necessary files used in building our website. To access the HTML files, navigate
 to env/src/trydjango/templates. Once we this repository is cloned on everyone's machines, we will be able
