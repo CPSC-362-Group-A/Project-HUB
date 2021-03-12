@@ -57,19 +57,28 @@ def event(request, event_id=None):
         
     else:
         instance = Event()
+    '''
+    if instance.end_time <= datetime.now():
+        instance.delete()
+'''
 
     form = EventForm(request.POST or None, instance=instance)
     if request.POST and form.is_valid():
-        form.save()
-        return HttpResponseRedirect(reverse('calen:calendarhome'))
-    elif action=='DELETE':
-        events = Event.ogbjects.all()
-        event_id = int(request.POST.get('event_id'))
-        event_item = Event.objects.get(id=event_id)
-        event_item.delete()
-        return render(request, 'calen/event.html', {'form':form, 'event':events})
-
+        if "delete_event" in request.POST:
+            #event_id = int(request.POST.get('event_id'))
+            #event_item = Event.objects.get(id=event_id)
+            #event_item.delete()
+            #form.delete()
+            #instance.deleted = True
+            instance.delete()
+            return HttpResponseRedirect(reverse('calen:calendarhome'))
+        else:
+            form.save()
+            return HttpResponseRedirect(reverse('calen:calendarhome'))   
     return render(request, 'calen/event.html', {'form':form})
+
+#def check_date_expired(event):
+
 '''
 def delete(request):
     if request.method == 'POST':

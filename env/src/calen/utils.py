@@ -10,6 +10,11 @@ class Calendar(HTMLCalendar):
         super(Calendar, self).__init__()
 
     def formatday(self, day, events):
+        '''
+        expired_events = events.filter(end_time=datetime.now())
+        for event in expired_events:
+            event.delete()
+'''     
         events_per_day = events.filter(start_time__day=day)
         d = ''
         for event in events_per_day:
