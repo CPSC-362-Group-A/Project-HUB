@@ -6,6 +6,7 @@ class Calendar(HTMLCalendar):
     def __init__(self, year=None, month=None):
         self.year = year
         self.month = month
+        self.firstweekday = 6
         super(Calendar, self).__init__()
 
     def formatday(self, day, events):
@@ -23,11 +24,11 @@ class Calendar(HTMLCalendar):
         week = ''
         for d, weekday in theweek:
             week += self.formatday(d, events)
-        return f'<tr bordercolor="#ffbe78"> {week} </tr>'
+        return f'<tr> {week} </tr>'
 
     def formatmonth(self, withyear=True):
         events = Event.objects.filter(start_time__year=self.year, start_time__month=self.month)
-        calen = f'<table border="3" bordercolor="#ffbe78" cellpadding="0" cellspacing="0" class="calendar">\n'
+        calen = f'<table style="font-family:Brush Script MT, cursive; font-weight:bold" border="3" bgcolor="#e2ffec" bordercolor="#ffbe78" cellpadding="0" cellspacing="0" class="calendar">\n'
         calen += f'{self.formatmonthname(self.year, self.month, withyear=withyear)}\n'
         calen += f'{self.formatweekheader()}\n'
         for week in self.monthdays2calendar(self.year, self.month):

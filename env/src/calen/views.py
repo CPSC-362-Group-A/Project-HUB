@@ -21,7 +21,9 @@ class CalendarView(generic.ListView):
         context = super().get_context_data(**kwargs)
         d = get_date(self.request.GET.get('month', None))
         calen = Calendar(d.year, d.month)
+        calen.setfirstweekday(6)
         html_calen = calen.formatmonth(withyear=True)
+        #html_calen = calen.setfirstweekday(6)
         html_calen = html_calen.replace('>%i<'%t.day, '<b><u><mark style="background-color:#ff85b4">%i</mark></u></b><'%t.day)
         context['calendar'] = mark_safe(html_calen)
         context['prev_month'] = prev_month(d)
@@ -52,6 +54,7 @@ def event(request, event_id=None):
     instance = Event()
     if event_id:
         instance = get_object_or_404(Event, pk=event_id)
+        
     else:
         instance = Event()
 
@@ -59,4 +62,21 @@ def event(request, event_id=None):
     if request.POST and form.is_valid():
         form.save()
         return HttpResponseRedirect(reverse('calen:calendarhome'))
+    elif action=='DELETE':
+        events = Event.ogbjects.all()
+        event_id = int(request.POST.get('event_id'))
+        event_item = Event.objects.get(id=event_id)
+        event_item.delete()
+        return render(request, 'calen/event.html', {'form':form, 'event':events})
+
     return render(request, 'calen/event.html', {'form':form})
+'''
+def delete(request):
+    if request.method == 'POST':
+        form = EventForm(request.POST)
+        events = Event.ogbjects.all()
+        event_id = int(request.POST.get('event_id'))
+        event_item = Event.objects.get(id=event_id)
+        event_item.delete()
+        return render(request, 'calen/event.html', {'form':form, 'event':events})
+'''
