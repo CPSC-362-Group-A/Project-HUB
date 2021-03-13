@@ -4,5 +4,4 @@ from cal_home import views
 urlpatterns = [
     path('', views.landing, name ='cal_landing'),
     path('test/', views.test, name ='cal_test'),
-    path('about/', views.about, name ='cal_about'),
 ]

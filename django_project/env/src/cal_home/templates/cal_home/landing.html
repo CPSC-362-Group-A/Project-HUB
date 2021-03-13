@@ -33,34 +33,67 @@
 
 <div class="container">
 
-    <h2>Features</h2>
-    <div class = "about1">
+   <h2> Features</h2>
+    <div class = "about1" >
     
-        <img src= "{% static '/cal_home/calen1.png' %}">
-    Calendar    
+        <a button class="btn" href="#about" ><img src= "{% static '/cal_home/calen1.png' %}"></img></a>
+    <h1>Calendar<br></h1>
+<p class = "p-about">Schedule tasks using this dynamic calendar!</p>
     </div>
 
     <div class = "about2">
 
-        <img src= "{% static '/cal_home/calen2.png' %}">
-   Tasks
+        <a button class="btn" href="#about" ><img src= "{% static '/cal_home/calen2.png' %}"></img></a>
+        <h1>Tasks<br></h1>
+        <p class = "p-about">Write down tasks so you don't forget!</p>
     </div>
 
 
     <div class = "about3">
 
-        <img src= "{% static '/cal_home/calen3.png' %}">
-   Music
+        
+        <a button class="btn" href="#music" ><img src= "{% static '/cal_home/calen3.png' %}"></img></a>
+   <h1>Music<br></h1>
+   <p class = "p-about">Listen to something while you schedule your tasks!</p>
 </div>
 
     <div class = "about4">
 
-        <img src= "{% static '/cal_home/calen4.png' %}">
-   Settings
+        <a button class="btn" href="#about" ><img src= "{% static '/cal_home/calen4.png' %}"></img></a>
+        <h1>Settings<br></h1>
+        <p class = "p-about">Customization options to make your task scheduler to your liking!</p>
     </div>
 
+
+
+
 </div>
-</div>
+
+
+    
+<div  id = "about" class = "static">
+    <div class = "start-about">
+        <h1> Schedule your Tasks: </h1>
+    <p class = "welcome-to-about">We make scheduling tasks easy, fun, and reliable.<br>
+        Never miss another task! Just add it to your calender.<br>
+        You will get constant reminders to work on your task. <br>
+        Schedule more than one task! Keep all of your tasks<br> organized. <br>
+      </p>
+    </div>
+    </div>
+    
+    
+      <div id ="music" class = "music">
+        <div class = "start-music">
+        <h1> Listen to music: </h1>
+    <p class = "welcome-to-music">Listen to your favorite tunes.<br>
+        Make scheduling fun by listening to music.<br>
+        You can put your favorite songs or  <br>
+        Some concentrating music to stay on task.<br>
+      </p>
+    </div>
+    </div>
+    </div>
 
 </body>
 {% endblock content %}

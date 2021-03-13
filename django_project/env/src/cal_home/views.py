@@ -7,5 +7,3 @@ def landing(request):
     return render(request, 'cal_home/landing.html')
 def test(request):
     return render(request, 'cal_home/test.html')
-def about(request):
-    return render(request, 'cal_home/about.html')
