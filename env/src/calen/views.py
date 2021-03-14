@@ -61,12 +61,11 @@ def event(request, event_id=None):
     if instance.end_time <= datetime.now():
         instance.delete()
 '''
-
+    if "cancel_event" in request.POST:
+        return HttpResponseRedirect(reverse('calen:calendarhome'))
     form = EventForm(request.POST or None, instance=instance)
     if request.POST and form.is_valid():
-        if "cancel_event" in request.POST:
-            return HttpResponseRedirect(reverse('calen:calendarhome'))
-        elif "delete_event" in request.POST:
+        if "delete_event" in request.POST:
             #event_id = int(request.POST.get('event_id'))
             #event_item = Event.objects.get(id=event_id)
             #event_item.delete()

@@ -20,7 +20,7 @@ class Event(models.Model):
         return f'<a href="{url}">{self.title}</a>'
 
     def get_expired_event(self):
-        return f'<del style="color: #00000">{self.title}</del>'
+        return self.title
 
 '''
     @property

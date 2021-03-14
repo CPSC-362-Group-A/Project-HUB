@@ -19,11 +19,11 @@ class Calendar(HTMLCalendar):
             event.delete()
 '''     
         events_per_day = events.filter(start_time__day=day)
-        expired_per_day = events.filter()
+        #expired_per_day = events.filter()
         d = ''
         for event in events_per_day:
             if event.end_time <= current:
-                d += f'<li>{event.get_expired_event}</li>'
+                d += f'<li><del {event.get_html_url} </del></li>'
             else:
                 d += f'<li> {event.get_html_url} </li>'
         '''if day == datetime.today():
