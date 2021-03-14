@@ -16,8 +16,12 @@ class Event(models.Model):
             url = reverse('calen:event_edit', args=(self.id,))
         elif self.deleted==True:
             '''
-        url = reverse('calen:delete_event', args=(self.id,))
+        url = reverse('calen:event_edit', args=(self.id,))
         return f'<a href="{url}">{self.title}</a>'
+
+    def get_expired_event(self):
+        return f'<del style="color: #00000">{self.title}</del>'
+
 '''
     @property
     def get_html_url(self):
