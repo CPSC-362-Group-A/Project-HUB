@@ -1,21 +1,21 @@
 
 
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 
 body{
   
-  height: 2000px;
-  width:1000px;
+  height: 4800px;
+  width:900px;
 }
 
 
 .hero{
     height: 1000px;
     width: 100%;
-   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg");
+   background-image: url("/static/cal_home/calendarbg.jpg");
 
    background-position: center;
     background-size: cover;
@@ -29,30 +29,32 @@ body{
 position:absolute;
 height: 1000px;
 width:100%;
-background-image: url("https://i.imgur.com/2bXSIo5.jpeg");
+background-image: url("/static/cal_home/paint.jpg");
 background-position: center;
 background-size: cover;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 500%;
 color:rgb(28, 37, 61);
 text-align: center;
-top:1000px;
+top:100%;
 
 border: 3px solid white;
 
 }
 
+/*Makes Features header boldened with white fill, but doesn't work on some browsers like IE
+
 .container h2{
   
 -webkit-text-stroke:5px black;
 -webkit-text-fill-color:white;
-}
+}*/
 
 /*Calendar*/
 .about1{
   position:absolute;
-top: 400px;
-  left: 200px;
+top: 40%;
+  left: 15%;
   padding: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
@@ -74,7 +76,6 @@ top: 400px;
   width: 200px;  
   background-color: transparent;
   transform: translate(50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   font-size: 0px;
   padding: 12px 24px;
   border: none;
@@ -83,16 +84,19 @@ top: 400px;
   text-align: center;
 }
 .about1 img{
-
   height: 100%;
   width:100%;
+}
+
+.about1:hover{
+  background-color:lightcoral;
 }
 
 /* Tasks icon */
 .about2{
   position:absolute;
-  top: 400px;
-  right: 300px;
+  top: 40%;
+  right: 15%;
   padding: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
@@ -112,7 +116,6 @@ top: 400px;
     width: 200px;  
     background-color: transparent;
     transform: translate(50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     font-size: 0px;
     padding: 12px 24px;
     border: none;
@@ -126,11 +129,15 @@ top: 400px;
   }
 
   
+.about2:hover{
+  background-color:lightcoral;
+}
+  
   /* Music icon */
 .about3{
   position:absolute;
-  top: 800px;
-  left: 200px;
+  top: 80%;
+  left: 15%;
   padding: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
@@ -145,12 +152,11 @@ top: 400px;
   .about3 .btn{
     position: absolute;
     top: -90%;
-    left: 4%;
+    left: 0%;
     height: 200px;
     width: 200px;  
     background-color: transparent;
     transform: translate(50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     font-size: 0px;
     padding: 12px 24px;
     border: none;
@@ -164,13 +170,17 @@ top: 400px;
     width:100%;
   }
 
+  
+.about3:hover{
+  background-color:lightcoral;
+}
 
   /* Settings icon */
 .about4{
   position:absolute;
  padding: 20px;
-  top: 800px;
-  right: 200px;
+  top: 80%;
+  right: 15%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
   border: 3px solid darkblue;
@@ -186,12 +196,11 @@ top: 400px;
     
     position: absolute;
     top: -90%;
-    left: 10%;
+    left: -12%;
     height: 200px;
     width: 200px;  
     background-color: transparent;
     transform: translate(50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     font-size: 0px;
     padding: 12px 24px;
     border: none;
@@ -207,25 +216,18 @@ top: 400px;
     width:100%;
   }
 
+  
+.about4:hover{
+  background-color:lightcoral;
+}
+
 .p-about{
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       color: darkblue;
       font-size: 22px;
       top: 120%;
 }
 
-.about1 .h1, .p{
-position:fixed;
-}
-.about2 .h1, .p{
-  position:fixed;
-}
-.about3 .h1, .p{
-  position:fixed;
-}
-.about4 .h1, .p{
-  position:fixed;
-}
  
 
 .form-box{
@@ -326,19 +328,20 @@ position:fixed;
   }
 
 
-  div.static {
-    background-image: url("https://www.ohsolovelyblog.com/wp-content/uploads/2020/12/OhSoLovelyBlog.com-January2021-Sunday-30.jpg");
+
+  div.calendar {
+    background-image: url("/static/cal_home/calendarbg2.jpg");
     
     background-position: center;
     background-size: 110%;
     position: absolute;
-    top: 2010px;
+    top: 201%;
     width: 100%;
     height: 700px;
     }
 
 
-  .start-about{
+  .start-calendar{
     position: relative;
     padding: 50px;
     top: 23%;
@@ -348,17 +351,18 @@ position:fixed;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    background-color:rgb(253, 192, 200);
     width: 380px;
     height: 300px;
   }
   
   h1{
     font-size: 40px;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
-    p.welcome-to-about{
-      font-family: fantasy;
+    p.welcome-to-calendar{
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       color: darkblue;
       font-size: 22px;
       top: 120%;
@@ -367,10 +371,52 @@ position:fixed;
 
 
 
+
+  div.static {
+    background-image: url("/static/cal_home/taskbg.jpg");
+    
+    background-position: cover;
+    background-size: 90%;
+    background-position-x: 190%;
+    background-position-y: 10%;
+    position: absolute;
+    top: 272%;
+    width: 100%;
+    height: 750px;
+    }
+
+
+  .start-about{
+    position: relative;
+    padding: 50px;
+    top: 23%;
+    left: 8%;
+    border: 3px solid rgb(44, 128, 206);
+    background-color:lightskyblue;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 380px;
+    height: 380px;
+  }
+  
+  
+    p.welcome-to-about{
+      font-family: monospace;
+      color: darkblue;
+      font-size: 22px;
+      top: 120%;
+    }
+  
+
+  
+
+
     .music{
-      background-image: url(https://t1.pixers.pics/img-c676e9e9/canvas-prints-vector-illustration-of-an-abstract-music-background-with-notes.jpg?H4sIAAAAAAAAA42PWW6FMAxFtxMkwE7IBAt4v28JKJDwSssQkbRFXX1NW_WvUuUPD7KP74XXLbkpwBi2HA5YZ--XANO8UJe6I6T5IzAslZFFR9OFIWLR7W_hGI89skq2ZaVEqTkvNdqie3d0uLrjhT3lHFMHkJo6zifRKI0JxjWBQG4AG1DW-2C41E0rQx-XPW971eDZYB23R4lX_B9pgSOowfNBD9ajHGwvBJ4Kq1_CF1aiJD_mQv_4M4iluXzlY14ZGd1pO7Pn-Cjgj5_fNdAV3O6gWmgNCAnaXKP-dldta4TUpndhctrrUdlRNY7kGessSjXpiWuSUtOXT57MTLuFAQAA);
+      background-image: url("/static/cal_home/musicbg.jpg");
   position: absolute;
-  top: 2720px;
+  top: 348%;
   width: 100%;
   height: 700px;
   background-position: center;
@@ -383,12 +429,45 @@ position:fixed;
     top: 10%;
     left: 8%;
     border: 16px solid black;
+    background-color:rgb(204, 150, 187);
     width: 360px;
-    height: 200px;
+    height: 250px;
     }
   
     p.welcome-to-music{
-      font-family: fantasy;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      color: darkblue;
+      font-size: 22px;
+      top: 120%;
+    }
+
+
+    
+
+
+    .settings{
+      background-image: url("/static/cal_home/spectrum.png");
+  position: absolute;
+  top: 419%;
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-size: 110%;
+    }
+  
+    .start-settings{
+    position: relative;
+    padding: 60px;
+    top: 10%;
+    left: 70%;
+    border: 16px solid black;
+    width: 360px;
+    height: 300px;
+    background-color:white;
+    }
+  
+    p.welcome-to-settings{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       color: darkblue;
       font-size: 22px;
       top: 120%;
