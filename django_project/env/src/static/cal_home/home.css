@@ -4,7 +4,9 @@
     margin: 0px;
     padding: 0;
 }
-
+.center{
+  align-items: center;
+}
 .container{
     position:absolute;
     left: 15%;
