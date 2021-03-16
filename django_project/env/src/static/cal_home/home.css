@@ -7,6 +7,7 @@
 
 .container{
     position:absolute;
+    left: 15%;
     height: 100%;
     width:5000px;
     background-color:rgb(207, 229, 238);
@@ -14,9 +15,9 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 500%;
     color:rgb(28, 37, 61);
-    
+
     border: 10px solid blueviolet;
-    
+
     }
 
 .icon1{
@@ -33,7 +34,7 @@
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    
+
   }
 
   .icon1 img{
@@ -41,15 +42,15 @@
     width:100px;
   }
 
-  
 
 
-  
+
+
 
   .icon1:hover{
     background-color:lightcoral;
   }
-  
+
   /* Tasks icon */
   .icon2{
     position:absolute;
@@ -69,12 +70,12 @@
     height: 100px;
     width:100px;
     }
-  
-    
+
+
   .icon2:hover{
     background-color:lightcoral;
   }
-    
+
     /* Music icon */
   .icon3{
     position:absolute;
@@ -91,16 +92,16 @@
     border-bottom-right-radius: 25px;
     }
   .icon3 img{
-    
+
     height: 100px;
     width:100px;
     }
-  
-    
+
+
   .icon3:hover{
     background-color:lightcoral;
   }
-  
+
     /* Settings icon */
   .icon4{
     position:absolute;
@@ -115,15 +116,15 @@
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-  
+
     }
-  
+
   .icon4 img{
     height: 100px;
     width:100px;
     }
-  
-    
+
+
   .icon4:hover{
     background-color:lightcoral;
   }
