@@ -6,7 +6,7 @@
 }
 
 body{
-
+  
   height: 4800px;
   width:900px;
 }
@@ -45,7 +45,7 @@ border: 3px solid white;
 /*Makes Features header boldened with white fill, but doesn't work on some browsers like IE
 
 .container h2{
-
+  
 -webkit-text-stroke:5px black;
 -webkit-text-fill-color:white;
 }*/
@@ -65,7 +65,7 @@ top: 40%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 
-
+  
 }
 .about1 .btn{
 
@@ -73,7 +73,7 @@ top: 40%;
   top: -90%;
     left: -4%;
   height: 200px;
-  width: 200px;
+  width: 200px;  
   background-color: transparent;
   transform: translate(50%, -50%);
   font-size: 0px;
@@ -113,7 +113,7 @@ top: 40%;
     top: -90%;
     left: -20%;
     height: 200px;
-    width: 200px;
+    width: 200px;  
     background-color: transparent;
     transform: translate(50%, -50%);
     font-size: 0px;
@@ -128,11 +128,11 @@ top: 40%;
     width:100%;
   }
 
-
+  
 .about2:hover{
   background-color:lightcoral;
 }
-
+  
   /* Music icon */
 .about3{
   position:absolute;
@@ -148,13 +148,13 @@ top: 40%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   }
-
+  
   .about3 .btn{
     position: absolute;
     top: -90%;
     left: 0%;
     height: 200px;
-    width: 200px;
+    width: 200px;  
     background-color: transparent;
     transform: translate(50%, -50%);
     font-size: 0px;
@@ -165,12 +165,12 @@ top: 40%;
     text-align: center;
   }
 .about3 img{
-
+  
     height: 100%;
     width:100%;
   }
 
-
+  
 .about3:hover{
   background-color:lightcoral;
 }
@@ -191,14 +191,14 @@ top: 40%;
   border-bottom-right-radius: 25px;
 
   }
-
+  
   .about4 .btn{
-
+    
     position: absolute;
     top: -90%;
     left: -12%;
     height: 200px;
-    width: 200px;
+    width: 200px;  
     background-color: transparent;
     transform: translate(50%, -50%);
     font-size: 0px;
@@ -207,7 +207,7 @@ top: 40%;
     cursor:pointer;
     border-radius: 5px;
     text-align: center;
-
+    
   }
 
 .about4 img{
@@ -216,7 +216,7 @@ top: 40%;
     width:100%;
   }
 
-
+  
 .about4:hover{
   background-color:lightcoral;
 }
@@ -228,7 +228,7 @@ top: 40%;
       top: 120%;
 }
 
-
+ 
 
 .form-box{
     width: 380px;
@@ -255,9 +255,9 @@ top: 40%;
     width: 190px;
     margin: auto;
     position: relative;
-
+    
     /*box-shadow: 0 0 20px 9px #ff61241f;*/
-    border-radius: 30px;
+    border-radius: 30px; 
     border-style:solid;
     border-color: black;
     background-color: rgb(42, 206, 218);
@@ -270,7 +270,7 @@ top: 40%;
   cursor: pointer;
   background: transparent;
   border: 1px solid black;
-
+    
   border-left:black;
   border-top: rgb(42, 206, 218);
   border-bottom: rgb(42, 206, 218);
@@ -283,7 +283,7 @@ top: 40%;
   cursor: pointer;
   background: transparent;
   border: 1px solid black;
-
+  
   border-right:black;
   border-top: rgb(42, 206, 218);
   border-bottom: rgb(42, 206, 218);
@@ -312,13 +312,13 @@ top: 40%;
     text-decoration: none;
     font-size: 17px;
   }
-
+  
   /* Change the color of links on hover */
   .button-box a:hover {
     background-color:lightskyblue;
     color: black;
   }
-
+  
 /* Might need to double check the active/current link. */
 
   /* Add a color to the active/current link */
@@ -327,54 +327,11 @@ top: 40%;
     color: black;
   }
 
-  div.static {
-  background-image: url("https://www.ohsolovelyblog.com/wp-content/uploads/2020/12/OhSoLovelyBlog.com-January2021-Sunday-30.jpg");
-  position: static;
-  width: 100%;
-  height: 600px;
-  background-position: center;
-  background-size: 100%;
-  }
-
-.start-about{
-  position: relative;
-  padding: 50px;
-  top: 23%;
-  left: 15%;
-  border: 3px solid rgb(44, 128, 206);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  width: 380px;
-  height: 300px;
-}
-
-h1{
-  font-size: 40px;
-  font-family: fantasy;
-}
-
-  p.welcome-to-about{
-    font-family: fantasy;
-    color: darkblue;
-    font-size: 22px;
-    top: 120%;
-  }
-
-  .music{
-    background-image: url(https://t1.pixers.pics/img-c676e9e9/canvas-prints-vector-illustration-of-an-abstract-music-background-with-notes.jpg?H4sIAAAAAAAAA42PWW6FMAxFtxMkwE7IBAt4v28JKJDwSssQkbRFXX1NW_WvUuUPD7KP74XXLbkpwBi2HA5YZ--XANO8UJe6I6T5IzAslZFFR9OFIWLR7W_hGI89skq2ZaVEqTkvNdqie3d0uLrjhT3lHFMHkJo6zifRKI0JxjWBQG4AG1DW-2C41E0rQx-XPW971eDZYB23R4lX_B9pgSOowfNBD9ajHGwvBJ4Kq1_CF1aiJD_mQv_4M4iluXzlY14ZGd1pO7Pn-Cjgj5_fNdAV3O6gWmgNCAnaXKP-dldta4TUpndhctrrUdlRNY7kGessSjXpiWuSUtOXT57MTLuFAQAA);
-position: static;
-width: 100%;
-height: 700px;
-background-position: center;
-background-size: 110%;
-  }
 
 
   div.calendar {
     background-image: url("/static/cal_home/calendarbg2.jpg");
-
+    
     background-position: center;
     background-size: 110%;
     position: absolute;
@@ -398,26 +355,26 @@ background-size: 110%;
     width: 380px;
     height: 300px;
   }
-
+  
   h1{
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-
+  
     p.welcome-to-calendar{
       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       color: darkblue;
       font-size: 22px;
       top: 120%;
     }
-
+  
 
 
 
 
   div.static {
     background-image: url("/static/cal_home/taskbg.jpg");
-
+    
     background-position: cover;
     background-size: 90%;
     background-position-x: 190%;
@@ -443,17 +400,17 @@ background-size: 110%;
     width: 380px;
     height: 380px;
   }
-
-
+  
+  
     p.welcome-to-about{
       font-family: monospace;
       color: darkblue;
       font-size: 22px;
       top: 120%;
     }
+  
 
-
-
+  
 
 
     .music{
@@ -465,7 +422,7 @@ background-size: 110%;
   background-position: center;
   background-size: 110%;
     }
-
+  
     .start-music{
     position: relative;
     padding: 50px;
@@ -476,7 +433,7 @@ background-size: 110%;
     width: 360px;
     height: 250px;
     }
-
+  
     p.welcome-to-music{
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       color: darkblue;
@@ -485,7 +442,7 @@ background-size: 110%;
     }
 
 
-
+    
 
 
     .settings{
@@ -497,7 +454,7 @@ background-size: 110%;
   background-position: center;
   background-size: 110%;
     }
-
+  
     .start-settings{
     position: relative;
     padding: 60px;
@@ -508,7 +465,7 @@ background-size: 110%;
     height: 300px;
     background-color:white;
     }
-
+  
     p.welcome-to-settings{
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       color: darkblue;
