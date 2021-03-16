@@ -7,21 +7,19 @@
 }
 
 .calendar tr, .calendar td{
-    border: 5px solid #855f36;
+    border: 1px solid black;
 }
 
 .calendar th{
     padding: 10px;
     text-align: center;
-    font-size:20px;
-    border: 5px solid #ffbe78;
+    font-size: 18px;
 }
 
 .calendar td{
     width: 200px;
     height: 150px;
     padding: 20px 0px 0px 5px;
-    border: 5px solid #ffbe78;
 }
 
 .month{
@@ -31,10 +29,6 @@
 .date{
     font-size: 16px;
 }
-del{
-    text-decoration: line-through;
-}
-
 
 ul{
     height: 100%;
@@ -75,18 +69,4 @@ a{
     background: none;
     padding: 5px;
     width: 100%;
-}
-
-mark{
-    background-color:#ff85b4;
-    color: black;
-}
-
-.back{
-    height: 100%;
-    width: 100%;
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Ffineartamerica.com%2Ffeatured%2Fsummer-mint-pastel-green-mint-podartist.html%3Fproduct%3Dround-beach-towel&psig=AOvVaw3yN3wVs8h3gNf8FneUMVG1&ust=1614743998997000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi1_6rckO8CFQAAAAAdAAAAABAD");
-    background-position: center;
-    background-size: cover;
-    position: absolute;
 }
