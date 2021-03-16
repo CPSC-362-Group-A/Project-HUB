@@ -1,21 +1,30 @@
-
-
 *{
-    margin: 0px;
-    padding: 0;
+    box-sizing: border-box
 }
+
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    
+}
+
+
 
 .container{
     position:absolute;
+    align-items: center;
     height: 100%;
-    width:5000px;
+    width:110%;
+    min-width: 100%;
     background-color:rgb(207, 229, 238);
     background-size:contain;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 500%;
     color:rgb(28, 37, 61);
     
-    border: 10px solid blueviolet;
+    border: 1px solid blueviolet;
     
     }
 
@@ -24,6 +33,8 @@
  margin: auto;
   top: 10%;
     left: 15%;
+    
+   width:280px;
     padding: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
@@ -34,6 +45,11 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     
+  }
+
+  .icon1 .btn{
+    width:100%;
+    display:block;
   }
 
   .icon1 img{
@@ -55,6 +71,8 @@
     position:absolute;
     top: 10%;
     right: 15%;
+    
+   width:250px;
     padding: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
@@ -65,6 +83,12 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     }
+
+    
+  .icon2 .btn{
+    width:100%;
+    display:block;
+  }
   .icon2 img{
     height: 100px;
     width:100px;
@@ -79,6 +103,8 @@
   .icon3{
     position:absolute;
     top: 60%;
+    
+   width:250px;
     left: 15%;
     padding: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -90,6 +116,12 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     }
+
+    .icon3 .btn{
+        width:100%;
+        display:block;
+      }
+
   .icon3 img{
     
     height: 100px;
@@ -105,6 +137,7 @@
   .icon4{
     position:absolute;
    padding: 20px;
+   width:250px;
     top: 60%;
     right: 15%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -118,6 +151,12 @@
   
     }
   
+
+    .icon4 .btn{
+        width:100%;
+        display:block;
+      }
+
   .icon4 img{
     height: 100px;
     width:100px;

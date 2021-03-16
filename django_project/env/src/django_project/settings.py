@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/cal_home/'
 
-LOGIN_REDIRECT_URL = 'calen:calendarhome' 
+LOGIN_REDIRECT_URL = 'cal_home'
 LOGIN_URL = 'login'
 
 STATIC_ROOT = '/env/src/static'
