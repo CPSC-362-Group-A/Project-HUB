@@ -58,14 +58,17 @@ a{
     color: black;
     background-color: transparent;
     box-shadow: 0 0 0 0;
+    position: static;
 }
 
 .clearfix{
     margin: 15px;
+    position: static;
 }
 
 .form{
     margin: auto;
+    padding: 0px 10px;
 }
 
 .form input, .form select, .form textarea{
@@ -82,11 +85,65 @@ mark{
     color: black;
 }
 
-.back{
-    height: 100%;
-    width: 100%;
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Ffineartamerica.com%2Ffeatured%2Fsummer-mint-pastel-green-mint-podartist.html%3Fproduct%3Dround-beach-towel&psig=AOvVaw3yN3wVs8h3gNf8FneUMVG1&ust=1614743998997000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi1_6rckO8CFQAAAAAdAAAAABAD");
-    background-position: center;
-    background-size: cover;
-    position: absolute;
+.sidenav{
+   width: 250px;
+   position: fixed;
+   z-index: 1;
+   top: 20px;
+   left: 10px;
+   background: #fdcf9d;
+   overflow-x: hidden;
+   padding: 8px 0px;
+   margin: 50px 5px 0px 0px;
 }
+
+.sidenav p{
+    padding: 16px 16px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.sidenav h{
+    font-size: 35px;
+    font-weight: bold;
+}
+.main{
+    margin-left: 250px;
+    padding: 0px 10px 0px 150px;
+}
+
+li{
+    font-size: 20px;
+}
+
+.eventnote{
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    left: 10px;
+    background: #fdcf9d;
+    overflow-x: hidden;
+    padding: 8px 0px;
+    margin: 100px 5px 0px 0px;
+ }
+ 
+ .eventnote p{
+     padding: 16px 16px 6px 16px;
+     text-decoration: none;
+     font-size: 20px;
+     color: black;
+     display: block;
+ }
+ 
+ .eventnote h{
+     font-size: 35px;
+     font-weight: bold;
+ }
+
+ .eventnote h2{
+     font-size: 20px;
+     font-weight: bold;
+ }

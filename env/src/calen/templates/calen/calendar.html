@@ -3,10 +3,21 @@
 {% extends 'cal_home/base.html' %}
 
 {% block content %}
+
 <div class="clearfix">
-    <a style="font-weight:bold" class="btn btn-info left" href="{% url 'calen:calendarhome' %}?{{prev_month}}">Previous Month</a>
-    <a style="font-weight:bold" class="btn btn-info right" href="{% url 'calen:calendarhome' %}?{{next_month}}">Next Month</a>
-    <a style="font-weight:bold" class="btn btn-info right" href="{% url 'calen:event_new' %}">New Event</a>
+    <div class="sidenav">
+        <h><u>Notes</u></h>
+        <p><li>Crossed out events have passed</li></p>
+        <p><li>Events are in order of when they were made not their times</li></p>
+        <p><li>Highlighted events can be edited and deleted</li></p>
+    </div>
+    <div class="main">
+        <a style="font-weight:bold" class="btn btn-info left" href="{% url 'calen:calendarhome' %}?{{prev_month}}">Previous Month</a>
+        <a style="font-weight:bold" class="btn btn-info right" href="{% url 'calen:calendarhome' %}?{{next_month}}">Next Month</a>
+        <a style="font-weight:bold" class="btn btn-info right" href="{% url 'calen:event_new' %}">New Event</a>
+        {{ calendar }}
+    </div>
 </div>
-{{ calendar }}
+
+
 {% endblock %}

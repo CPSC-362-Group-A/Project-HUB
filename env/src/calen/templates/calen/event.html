@@ -26,6 +26,12 @@ Event
 
 <form method="post">
     {% csrf_token %}
+    <div class="eventnote">
+        <h><u>Notes</u></h>
+        <p>Start time should be written as: MM/DD/YYYY hr:min AM/PM</p>
+        <p><h2>Ex:</h2>05/05/2021 03:45 PM</p>
+        <p>End time is written in the same way</p>
+    </div>
     <table class="form form-table">
         {{form}}
         <tr>
