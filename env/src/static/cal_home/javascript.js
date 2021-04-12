@@ -7,7 +7,27 @@ var quotes = [
   "<p>Live as if you were to die tomorrow. Learn as if you were to live forever.\― Mahatma Gandhi</p>"
 ]
 
+
 function newQuote() {
   var randomNumber = Math.floor(Math.random() * (quotes.length));
   document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+
+function saveQuote() {
+   var getInput = document.getElementById('quoteDisplay').innerHTML;
+   localStorage.setItem("setQuote",getInput);
+
+}
+
+function useQuote() {
+     var quote = localStorage.getItem("setQuote");
+if (quote == null)
+{
+	quote = "<p>Click the button for a quote.</p>"
+        document.getElementById('quoteDisplay').innerHTML = quote;
+}
+else
+{
+        document.getElementById('quoteDisplay').innerHTML = quote;
+}
 }
