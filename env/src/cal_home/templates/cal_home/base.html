@@ -26,6 +26,9 @@
     <a href="#Music">Music</a>
     <a href="#Settings">Settings</a>
 
+    <div id ="quoteDisplay" class = "quoteDisplay"><p>Click the button for a quote.</p></div>
+    <button class="quotebtn" onclick="newQuote()">"</button>
+    
     <!-- Implement procedure to log out, maybe add a confirmation window/message before logging out?-->
     <a style="float:right"  href={% url 'cal_landing' %}>Log Out</a>
 
@@ -39,7 +42,8 @@
     </div>
 
 
-
+    <script type="text/javascript" src="{% static 'cal_home/javascript.js' %}"></script>
+    
 </body>
 
 </html>
