@@ -5,10 +5,6 @@ Event
 {% endblock %}
 
 {% block content %}
-<div class="clearfix">
-    <a class="btn btn-info left" href="{% url 'calen:calendarhome' %}">Calendar</a>
-</div>
-
 {% if form.errors %}
     {% for field in form %}
         {% for error in field.errors %}
@@ -26,10 +22,16 @@ Event
 
 <form method="post">
     {% csrf_token %}
+    <div class="eventnote">
+        <h><u>Notes</u></h>
+        <p>Start time should be written as: MM/DD/YYYY hr:min AM/PM</p>
+        <p><h2>Ex:</h2>05/05/2021 03:45 PM</p>
+        <p>End time is written in the same way</p>
+    </div>
     <table class="form form-table">
         {{form}}
         <tr>
-            <td><button type="submit" name="delete_event" class="btn btn-info right">Delete</button></td>   
+            <td><button type="submit" name="delete_event" class="btn btn-info right">Delete</button></td>
             <td colspan="2"><button type="submit" class="btn btn-info right">Submit</button></td>
         </tr>
     </table>
