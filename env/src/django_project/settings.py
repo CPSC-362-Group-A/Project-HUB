@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/cal_home/'
 
-LOGIN_REDIRECT_URL = 'calen:calendarhome'
+LOGIN_REDIRECT_URL = 'cal_home' 
 LOGIN_URL = 'login'
 
 STATIC_ROOT = '/env/src/static'
@@ -136,6 +136,7 @@ STATIC_ROOT = '/env/src/static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'

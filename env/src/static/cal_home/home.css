@@ -8,7 +8,7 @@
 .container{
     position:absolute;
     height: 100%;
-    width:5000px;
+    width:5000px;	
     min-width:100%;
     background-color:rgb(207, 229, 238);
     background-size:contain;
