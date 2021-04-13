@@ -3,18 +3,16 @@
 *{
     margin: 0px;
     padding: 0;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
+	
 }
 
-body{
-  
+html, body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
   height: 4800px;
   width:900px;
 }
-
 
 .hero{
     height: 1000px;
@@ -28,6 +26,20 @@ body{
 }
 
 
+.feature-arrow{
+  position:absolute;
+  top: 72%;
+left: 47%;
+
+}
+
+.feature-arrow img{
+  height:150px;
+  width: 100px;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container{
 
 position:absolute;
@@ -277,7 +289,7 @@ top: 40%;
   cursor: pointer;
   background: transparent;
   border: 1px solid black;
-
+    
   border-left:black;
   border-top: rgb(42, 206, 218);
   border-bottom: rgb(42, 206, 218);
@@ -290,7 +302,7 @@ top: 40%;
   cursor: pointer;
   background: transparent;
   border: 1px solid black;
-
+  
   border-right:black;
   border-top: rgb(42, 206, 218);
   border-bottom: rgb(42, 206, 218);
@@ -319,13 +331,13 @@ top: 40%;
     text-decoration: none;
     font-size: 17px;
   }
-
+  
   /* Change the color of links on hover */
   .button-box a:hover {
     background-color:lightskyblue;
     color: black;
   }
-
+  
 /* Might need to double check the active/current link. */
 
   /* Add a color to the active/current link */
@@ -338,7 +350,7 @@ top: 40%;
 
   div.calendar {
     background-image: url("/static/cal_home/calendarbg2.jpg");
-
+    
     background-position: center;
     background-size: 110%;
     position: absolute;
@@ -362,26 +374,26 @@ top: 40%;
     width: 380px;
     height: 300px;
   }
-
+  
   h1{
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-
+  
     p.welcome-to-calendar{
       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       color: darkblue;
       font-size: 22px;
       top: 120%;
     }
-
+  
 
 
 
 
   div.static {
     background-image: url("/static/cal_home/taskbg.jpg");
-
+    
     background-position: cover;
     background-size: 90%;
     background-position-x: 190%;
@@ -407,17 +419,17 @@ top: 40%;
     width: 380px;
     height: 380px;
   }
-
-
+  
+  
     p.welcome-to-about{
       font-family: monospace;
       color: darkblue;
       font-size: 22px;
       top: 120%;
     }
+  
 
-
-
+  
 
 
     .music{
@@ -429,7 +441,7 @@ top: 40%;
   background-position: center;
   background-size: 110%;
     }
-
+  
     .start-music{
     position: relative;
     padding: 50px;
@@ -440,7 +452,7 @@ top: 40%;
     width: 360px;
     height: 250px;
     }
-
+  
     p.welcome-to-music{
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       color: darkblue;
@@ -449,7 +461,7 @@ top: 40%;
     }
 
 
-
+    
 
 
     .settings{
@@ -461,18 +473,18 @@ top: 40%;
   background-position: center;
   background-size: 110%;
     }
-
+  
     .start-settings{
     position: relative;
     padding: 60px;
     top: 10%;
-    left: 70%;
+    left: 8%;
     border: 16px solid black;
     width: 360px;
     height: 300px;
     background-color:white;
     }
-
+  
     p.welcome-to-settings{
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       color: darkblue;

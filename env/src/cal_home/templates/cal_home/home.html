@@ -6,7 +6,7 @@
 
 <html>
 <head>
-
+    
       <title>Home</title>
 
 </head>
@@ -15,34 +15,23 @@
 {% block content %}
 
 
-
 <div class="container">
 
-     <div class = "icon1" >
-
-        <img src= "{% static '/cal_home/calen1.png' %}"></img>
-     <a href= {% url 'calen:calendarhome' %}>Calendar<br></a>
-     </div>
-
-     <div class = "icon2">
-
-         <img src= "{% static '/cal_home/calen2.png' %}"></img>
-         <a href= "#Tasks">Tasks<br></a>
-     </div>
-
-
-     <div class = "icon3">
-
-
-        <img src= "{% static '/cal_home/calen3.png' %}"></img>
-        <a href= "#Music">Music<br></a>
- </div>
-
-     <div class = "icon4">
-
-        <img src= "{% static '/cal_home/calen4.png' %}"></img>
-        <a href= "#Settings">Settings<br></a>
-     </div>
+     
+     <a class ="icon1" type="button" href= {% url 'calen:calendarhome' %}><img src= "{% static 'cal_home/calen1.png' %}"></img>Calendar<br></a>
+    
+ 
+         
+         <a class ="icon2" type="button" href="#Tasks"><img src= "{% static 'cal_home/calen2.png' %}"></img>Tasks<br></a>
+    
+ 
+ 
+        
+        <a class="icon3" type="button" href="#Music"><img src= "{% static 'cal_home/calen3.png' %}"></img>Music<br></a>
+ 
+        
+        <a class="icon4" type="button" href="#Settings"><img src= "{% static 'cal_home/calen4.png' %}"></img>Settings<br></a>
+   
 
 </div>
 

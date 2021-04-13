@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="{% static '/cal_home/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cal_home/style.css' %}">
     <title>Task Scheduler</title>
 
 {% block content %}
@@ -13,14 +13,11 @@
 <div>
 
 <div class = "hero">
-<<<<<<< Updated upstream
-=======
-    <div class = "feature-arrow"><br><br><br><br>
+    <div class = "feature-arrow">
         <a type="button" href="#features">
             <img src="{% static '/cal_home/featuresarrow.png' %}">
         </a>
     </div>
->>>>>>> Stashed changes
    <div class = "form-box">
        <div class = "image-icons">
         <img src="{% static '/cal_home/calendarpic1.jpg' %}">
@@ -41,9 +38,9 @@
 
 <div class="container">
 
-   <h2> Features</h2>
+   <h2 id="features"> Features</h2>
     <div class = "about1" >
-
+    
         <a button class="btn" href="#calendar" ><img src= "{% static '/cal_home/calen1.png' %}"></img></a>
     <h1>Calendar<br></h1>
 <p class = "p-about">Schedule tasks using this dynamic calendar!</p>
@@ -59,7 +56,7 @@
 
     <div class = "about3">
 
-
+        
         <a button class="btn" href="#music" ><img src= "{% static '/cal_home/calen3.png' %}"></img></a>
    <h1>Music<br></h1>
    <p class = "p-about">Listen to something while you schedule tasks!</p>
@@ -100,8 +97,8 @@
       </p>
     </div>
     </div>
-
-
+    
+    
       <div id ="music" class = "music">
         <div class = "start-music">
         <h1> Listen to music: </h1>
