@@ -93,7 +93,7 @@ mark{
    left: 10px;
    background: #fdcf9d;
    overflow-x: hidden;
-   padding: 8px 0px;
+   padding: 10px 15px;
    margin: 50px 5px 0px 0px;
 }
 
@@ -102,7 +102,7 @@ mark{
    width: 250px;
    position: fixed;
    z-index: 1;
-   top: 30px;
+   top: 27px;
    left: 0px;
    background: #fdcf9d;
    overflow-x: hidden;
@@ -128,7 +128,7 @@ li{
   width: 250px;
   position: fixed;
   z-index: 1;
-  top: 30px;
+  top: 27px;
   left: 0px;
   background: #fdcf9d;
   overflow-x: hidden;

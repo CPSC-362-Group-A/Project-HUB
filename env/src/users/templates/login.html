@@ -2,7 +2,7 @@
 
 {% load crispy_forms_tags %}
 <!DOCTYPE html>
-<html>
+<html style="height:auto;" >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,7 +10,7 @@
     <title>Task Scheduler</title>
 
 {% block content %}
-<body>
+<body style="height:auto;">
 <div>
 
 <div class = "hero">
@@ -39,8 +39,8 @@
 
           </form>
           <div class="border-top pt-3">
-            <center><br><br><br>
-              <h3 class="text-muted">
+            <center>
+              <h3 class="text-muted" style="margin-top: 75px;">
                 Need An Account: <a class "ml-2" href="{% url 'register' %}">Sign Up Now</a>
               </h3>
         
