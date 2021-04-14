@@ -9,6 +9,7 @@
     position:absolute;
     height: 100%;
     width:5000px;
+    max-width:100%;
     background-color:rgb(207, 229, 238);
     background-size:contain;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
