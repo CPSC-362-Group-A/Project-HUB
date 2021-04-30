@@ -24,7 +24,7 @@ class CalendarView(generic.ListView):
         calen.setfirstweekday(6)
         html_calen = calen.formatmonth(withyear=True)
         #html_calen = calen.setfirstweekday(6)
-        html_calen = html_calen.replace('>%i<'%t.day, '<b><u><mark style="background-color:#ff85b4">%i</mark></u></b><'%t.day)
+        html_calen = html_calen.replace('>%i<'%t.day, '<b><u><mark id="CalenMark" style="background-color:#ff85b4">%i</mark></u></b><'%t.day)
         context['calendar'] = mark_safe(html_calen)
         context['prev_month'] = prev_month(d)
         context['next_month'] = next_month(d)

@@ -3,25 +3,25 @@
 .calendar{
     width: 98%;
     margin: auto;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .calendar tr, .calendar td{
-    border: 5px solid #855f36;
+    border: 5px solid #ffbe78;
 }
 
 .calendar th{
     padding: 10px;
     text-align: center;
     font-size:20px;
-    border: 5px solid #ffbe78;
+
 }
 
 .calendar td{
     width: 200px;
     height: 150px;
     padding: 20px 0px 0px 5px;
-    border: 5px solid #ffbe78;
+    font-size:20px;
 }
 
 .month{
@@ -82,7 +82,6 @@ a{
 
 mark{
     background-color:#ff85b4;
-    color: black;
 }
 
 .sidenav{
@@ -100,13 +99,13 @@ mark{
 .sidenav p{
     padding: 16px 16px 6px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size:20px;
     color: black;
     display: block;
 }
 
 .sidenav h{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
 }
 .main{
@@ -115,7 +114,7 @@ mark{
 }
 
 li{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .eventnote{
