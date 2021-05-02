@@ -1,0 +1,48 @@
+/* Add a black background color to the top navigation */
+.topnav{
+  background-color: #333;
+  overflow: hidden;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:lightcyan;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: lightblue;
+  color: black;
+}
+
+.quotebtn{
+  color: orange;
+  background-color:#333;
+  border-color: transparent;
+  position: absolute;
+  top:10px;
+}
+
+.quoteDisplay {
+  margin: 0px auto;
+  
+  padding: 14px 16px;
+  position:absolute;
+  background-color: lightblue;
+  height:6.5%;
+left:480px;
+  color: red;
+}

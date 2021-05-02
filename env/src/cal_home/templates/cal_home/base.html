@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link rel="stylesheet" type="text/css" href="{% static '/cal_home/main.css' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+      <link rel="stylesheet" type="text/css" href="{% static 'cal_home/calen-style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'cal_home/home.css' %}">
+      <title>Task Scheduler</title>
+
+</head>
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="topnav">
+    <!---->
+    <a class="active" href={% url 'cal_home' %}>Home</a>
+    <a href={% url 'calen:calendarhome' %}>Calendar</a>
+    <a href="#Tasks">Tasks</a>
+    <a href="#Music">Music</a>
+    <a href="#Settings">Settings</a>
+
+    <div id ="quoteDisplay" class = "quoteDisplay"><p>Click the button for a quote.</p></div>
+    <button class="quotebtn" onclick="newQuote()">"</button>
+    
+    <!-- Implement procedure to log out, maybe add a confirmation window/message before logging out?-->
+    <a style="float:right"  href={% url 'cal_landing' %}>Log Out</a>
+
+  </div>
+
+
+    <div class ="main-container">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+
+    <script type="text/javascript" src="{% static 'cal_home/javascript.js' %}"></script>
+    
+</body>
+
+</html>
