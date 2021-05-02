@@ -16,7 +16,10 @@
       <title>Task Scheduler</title>
 
 </head>
-<body>
+<body onload = "useQuote();">
+ 
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <div class="topnav">
     <!---->
@@ -25,12 +28,10 @@
     <a href="#Tasks">Tasks</a>
     <a href="#Music">Music</a>
     <a href="#Settings">Settings</a>
-
-    <div id ="quoteDisplay" class = "quoteDisplay"><p>Click the button for a quote.</p></div>
-    <button class="quotebtn" onclick="newQuote()">"</button>
-    
+    <button style="float:none" class="quotebtn" onclick="newQuote(); saveQuote();">"</button>
+    <div style="float:none" id ="quoteDisplay" class = "quoteDisplay"><p><al>Click the button for a quote.</al></p></div>
     <!-- Implement procedure to log out, maybe add a confirmation window/message before logging out?-->
-    <a style="float:right"  href={% url 'cal_landing' %}>Log Out</a>
+    <a style="float:right" class="logout" href={% url 'cal_landing' %}>Log Out</a>
 
   </div>
 
