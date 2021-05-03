@@ -40,7 +40,7 @@ class Calendar(HTMLCalendar):
 
     def formatmonth(self, withyear=True):
         events = Event.objects.filter(start_time__year=self.year, start_time__month=self.month)
-        calen = f'<table id="CalenTable" style="font-family:Verdana, sans-serif; font-weight:bold" border="3" bgcolor="#e2ffec" bordercolor="#ffbe78" cellpadding="0" cellspacing="0" class="calendar">\n'
+        calen = f'<table id="CalenTable" style="font-family:Verdana, sans-serif; font-weight:bold" border="3" cellpadding="0" cellspacing="0" class="calendar">\n'
         calen += f'{self.formatmonthname(self.year, self.month, withyear=withyear)}\n'
         calen += f'{self.formatweekheader()}\n'
         for week in self.monthdays2calendar(self.year, self.month):

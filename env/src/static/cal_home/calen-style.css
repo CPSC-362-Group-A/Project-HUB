@@ -1,5 +1,8 @@
 /* calen/static/calen/css/styles.css */
 
+:root{
+    --backcol:#e2ffec;
+}
 .calendar{
     width: 98%;
     margin: auto;
@@ -8,6 +11,7 @@
 
 .calendar tr, .calendar td{
     border: 5px solid #ffbe78;
+    background-color: var(--backcol);
 }
 
 .calendar th{
