@@ -3,7 +3,7 @@
 *{
     margin: 0px;
     padding: 0;
-    
+	
 }
 
 html, body{
@@ -13,7 +13,6 @@ html, body{
   height: 4800px;
   width:900px;
 }
-
 
 .hero{
     height: 1000px;
@@ -25,6 +24,7 @@ html, body{
     position:absolute;
     border: 3px solid white;
 }
+
 
 .feature-arrow{
   position:absolute;
@@ -40,8 +40,6 @@ left: 47%;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 .container{
 
 position:absolute;
@@ -63,7 +61,7 @@ border: 3px solid white;
 /*Makes Features header boldened with white fill, but doesn't work on some browsers like IE
 
 .container h2{
-  
+
 -webkit-text-stroke:5px black;
 -webkit-text-fill-color:white;
 }*/
@@ -83,7 +81,7 @@ top: 40%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 
-  
+
 }
 .about1 .btn{
 
@@ -91,7 +89,7 @@ top: 40%;
   top: -90%;
     left: -4%;
   height: 200px;
-  width: 200px;  
+  width: 200px;
   background-color: transparent;
   transform: translate(50%, -50%);
   font-size: 0px;
@@ -131,7 +129,7 @@ top: 40%;
     top: -90%;
     left: -20%;
     height: 200px;
-    width: 200px;  
+    width: 200px;
     background-color: transparent;
     transform: translate(50%, -50%);
     font-size: 0px;
@@ -146,11 +144,11 @@ top: 40%;
     width:100%;
   }
 
-  
+
 .about2:hover{
   background-color:lightcoral;
 }
-  
+
   /* Music icon */
 .about3{
   position:absolute;
@@ -166,13 +164,13 @@ top: 40%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   }
-  
+
   .about3 .btn{
     position: absolute;
     top: -90%;
     left: 0%;
     height: 200px;
-    width: 200px;  
+    width: 200px;
     background-color: transparent;
     transform: translate(50%, -50%);
     font-size: 0px;
@@ -183,12 +181,12 @@ top: 40%;
     text-align: center;
   }
 .about3 img{
-  
+
     height: 100%;
     width:100%;
   }
 
-  
+
 .about3:hover{
   background-color:lightcoral;
 }
@@ -209,14 +207,14 @@ top: 40%;
   border-bottom-right-radius: 25px;
 
   }
-  
+
   .about4 .btn{
-    
+
     position: absolute;
     top: -90%;
     left: -12%;
     height: 200px;
-    width: 200px;  
+    width: 200px;
     background-color: transparent;
     transform: translate(50%, -50%);
     font-size: 0px;
@@ -225,7 +223,7 @@ top: 40%;
     cursor:pointer;
     border-radius: 5px;
     text-align: center;
-    
+
   }
 
 .about4 img{
@@ -234,7 +232,7 @@ top: 40%;
     width:100%;
   }
 
-  
+
 .about4:hover{
   background-color:lightcoral;
 }
@@ -246,12 +244,15 @@ top: 40%;
       top: 120%;
 }
 
- 
+
 
 .form-box{
     width: 380px;
-    height: 600px;
+    height: 650px;
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     justify-content: center;
     margin: 6% auto;
     background:white;
@@ -273,9 +274,9 @@ top: 40%;
     width: 190px;
     margin: auto;
     position: relative;
-    
+
     /*box-shadow: 0 0 20px 9px #ff61241f;*/
-    border-radius: 30px; 
+    border-radius: 30px;
     border-style:solid;
     border-color: black;
     background-color: rgb(42, 206, 218);
