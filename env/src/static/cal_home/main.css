@@ -33,7 +33,7 @@
   position: relative;
   background-color:#333;
   border-color: transparent;
-  top:10px;
+  top:12px;
   left: 0px;
 }
 
@@ -48,7 +48,7 @@
   height:50px;
   width: 60%;
   top:-30px;
-  left:50px;
+  left:120px;
   color: black;
 }
 
@@ -95,4 +95,66 @@
 .logout{
   position:relative;
   top: -80px;
+}
+
+
+
+
+
+
+
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 650px;
+  background-color:  #333;
+  color:orange;
+  border: 3px solid black;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+
+.form-container .form-container input, button{
+
+  color: orange;
+  background-color: gray;
+  border: 1px solid black;
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+.form-container .form-container button, input{
+
+  color: orange;
+  background-color: gray;
+  border: 1px solid black;
+  cursor: pointer;
+  opacity: 1;
+}
+
+ #quote{
+
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  cursor:default;
+}
+
+
+
+
+.form-container .btn:hover, .open-button:hover, .button:hover {
+  opacity: 0.8;
 }

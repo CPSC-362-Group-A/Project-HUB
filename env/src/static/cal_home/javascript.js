@@ -1,3 +1,5 @@
+var quotes = [100];
+
 var quotes = [
     "<p>It\'s only after you\'ve stepped outside your comfort zone that you begin to change, grow, and transform. \-Roy T. Bennett</p>",
     "<p>Do what is right, not what is easy nor what is popular. \-Roy T. Bennett, The Light in the Heart</p>",
@@ -16,11 +18,36 @@ var quotes = [
   function saveQuote() {
      var getInput = document.getElementById('quoteDisplay').innerHTML;
      localStorage.setItem("setQuote",getInput);
+     localStorage.setItem("setQuoteForm",getInput);
+  }
+
+  function saveQuoteForm() {
+    var getInput = document.getElementById('quote').value;
+    getInput = "<p>" + getInput + "</p>";
+    localStorage.setItem("setQuoteForm",getInput);
+    localStorage.setItem("setQuote",getInput);
+ }
+
+  function addQuotes() {
+    var boxvalue = document.getElementById('quote').innerHTML;
+    
+    if (boxvalue == null)
+    {
+        
+            document.getElementById('quoteDisplay').innerHTML =  "<p>Click the button for a quote.</p>";
+    }
+    else
+    {
+      quotes.push(boxvalue);
+      console.log(quotes);
+            document.getElementById('quoteDisplay').innerHTML = "<p>" + boxvalue + "</p>";
+    }
   
   }
   
   function useQuote() {
        var quote = localStorage.getItem("setQuote");
+       var quoteForm = localStorage.getItem("setQuoteForm");
   if (quote == null)
   {
       quote = "<p>Click the button for a quote.</p>"
@@ -30,4 +57,18 @@ var quotes = [
   {
           document.getElementById('quoteDisplay').innerHTML = quote;
   }
+  }
+
+  function openForm() {
+    if(document.getElementById("CustomQuote").style.display == "block")
+    {
+      document.getElementById("CustomQuote").style.display = "none";
+    }
+    else{
+      document.getElementById("CustomQuote").style.display = "block";
+    }
+  }
+  
+  function closeForm() {
+    document.getElementById("CustomQuote").style.display = "none";
   }
