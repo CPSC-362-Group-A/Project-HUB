@@ -68,7 +68,21 @@ var quotes = [
       document.getElementById("CustomQuote").style.display = "block";
     }
   }
+
+  function openFormB() {
+    if(document.getElementById("settingsHome").style.display == "block")
+    {
+      document.getElementById("settingsHome").style.display = "none";
+    }
+    else{
+      document.getElementById("settingsHome").style.display = "block";
+    }
+  }
   
   function closeForm() {
     document.getElementById("CustomQuote").style.display = "none";
+  }
+
+  function closeFormB() {
+    document.getElementById("settingsHome").style.display = "none";
   }

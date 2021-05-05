@@ -14,9 +14,9 @@
     background-size:contain;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 500%;
-    color:rgb(28, 37, 61);
+    color:#1c253d;
     
-    border: 10px solid blueviolet;
+    border: 10px solid #8a2be2;
     
     }
 
@@ -111,13 +111,19 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     border: 3px solid darkblue;
-    background-color: rgb(105, 230, 209);
+    background-color: #69e6d1;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   
     }
+
+    
+a{
+  color: #17a2b8;
+}
+
   
   .icon4 img{
     height: 100px;
@@ -127,4 +133,24 @@
     
   .icon4:hover{
     background-color:lightcoral;
+  }
+  
+
+ #settingsbtn{
+   position: absolute;
+   top: 2%;
+   left: 1%;
+   height: 7%;
+   width: 7%;
+  padding: 20px;
+  font-size: 20%;
+  color:rgb(28, 37, 61);
+  background-color: rgb(105, 230, 209);
+  border: 1px solid black;
+  cursor: pointer;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  opacity: 1;
   }

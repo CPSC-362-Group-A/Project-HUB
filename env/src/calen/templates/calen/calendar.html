@@ -42,11 +42,7 @@
 
     function saveBgColor() {
         var x = document.getElementById("CalenTable");
-        var y = document.getElementById("CalenTable");;
         x.value = document.getElementById("CalenTable").style.backgroundColor;
-        y.value = document.getElementById("CalenTable").style.backgroundColor;
-        y.value = rgbToHex(x.value);
-        document.getElementById("colorBackground").value = y.value;
      localStorage.setItem("bgcolor", x);
     }
 
